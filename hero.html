@@ -1,0 +1,51 @@
+<style id="ghh-styles">
+.ghh *{box-sizing:border-box}
+.ghh a{text-decoration:none!important}
+.ghh p{margin:0}
+.ghh-svc:hover .ghh-svc-arrow{background:#fff!important;color:#14514e!important}
+.ghh-aud-arrow:hover,.ghh-nav-next:hover{background:#14514e!important}
+.ghh-nav-prev:hover{background:#2f8d86!important;color:#fff!important}
+.ghh-btn-solid:hover,.ghh-join-btn:hover,.ghh-btn-white:hover{background:#14514e!important;color:#fff!important}
+.ghh-btn-ghost:hover{background:#e9f6f4!important}
+.ghh-btn-outline:hover{background:#fff!important;color:#2f8d86!important}
+
+/* Hero video background */
+.ghh-hero{position:relative;overflow:hidden;background:#14514e url('REPLACE-IMAGE-URL-HERO') center center / cover no-repeat}
+.ghh-hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+/* Light overlay: only a soft tint behind the text on the left; the right side stays clear so the video shows */
+.ghh-hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(95deg,rgba(17,74,72,.55) 0%,rgba(17,74,72,.30) 35%,rgba(17,74,72,0) 65%)}
+.ghh-hero-inner{position:relative;z-index:2}
+.ghh-hero-inner h1,.ghh-hero-inner p,.ghh-hero-inner a{text-shadow:0 1px 12px rgba(0,0,0,.35),0 1px 2px rgba(0,0,0,.25)}
+@media (prefers-reduced-motion:reduce){.ghh-hero-video{display:none}}
+
+@media (max-width:1024px){
+.ghh-grid4{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.ghh-grid3{grid-template-columns:1fr!important}
+.ghh-split{grid-template-columns:1fr!important}
+.ghh-h1{font-size:40px!important}
+.ghh-quote{font-size:28px!important}
+.ghh-hero-inner{padding:70px 24px!important}
+.ghh-hero-overlay{background:linear-gradient(180deg,rgba(17,74,72,.5) 0%,rgba(17,74,72,.3) 100%)}
+.ghh-trust{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.ghh-join{flex-direction:column!important;min-height:0!important}
+.ghh-join-photo{width:200px!important;flex:none!important;margin:0 auto -60px!important}
+.ghh-join-panel{margin-left:0!important;padding:80px 24px 40px!important;border-radius:18px!important;align-items:center!important;text-align:center!important}
+.ghh-cta-row{justify-content:flex-start!important}
+}
+@media (max-width:640px){.ghh-grid4{grid-template-columns:1fr!important}.ghh-trust{grid-template-columns:1fr!important}}
+</style>
+<div class="ghh">
+<div class="ghh-hero">
+<!-- Replace REPLACE-VIDEO-URL with your .mp4 (keep it short, ~10-20s, under ~5MB, muted). Optionally add a .webm <source> first. -->
+<video class="ghh-hero-video" autoplay muted loop playsinline preload="auto" poster="REPLACE-IMAGE-URL-HERO" aria-hidden="true">
+<source src="REPLACE-VIDEO-URL.mp4" type="video/mp4">
+</video>
+<div class="ghh-hero-overlay"></div>
+<div class="ghh-hero-inner" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; font-family: Nunito,'Hanken Grotesk',system-ui,sans-serif; padding-top: 120px; padding-bottom: 150px;">
+<h1 class="ghh-h1" style="font-family: Nunito,system-ui,sans-serif; font-weight: 500; font-size: 62px; line-height: 1.1; color: #fff; margin: 0 0 28px; max-width: 660px;">We put <strong style="font-weight: 900;">Hope</strong> in <strong style="font-weight: 900;">Care</strong>
+to make life <strong style="font-weight: 900;">Good</strong>.</h1>
+<p style="font-family: 'Hanken Grotesk',system-ui,sans-serif; font-size: 21px; line-height: 1.5; color: #fff; max-width: 470px; margin: 0 0 40px;">We provide NDIS support, home care, veteran services, and nursing workforce solutions, delivered with warmth across every corner of Australia.</p>
+<a style="display: inline-flex; align-items: center; gap: 16px; color: #fff; font-family: Nunito,system-ui,sans-serif; font-weight: bold; font-size: 18px;" href="#">Watch our story</a>
+</div>
+</div>
+</div>
